@@ -1,0 +1,30 @@
+body{
+    display:grid;
+    background-color:black;
+    grid-template-areas: 
+    "welcome"
+    "subwelcome"
+    "dropdown"
+    "submit";
+    justify-items:center;
+}
+
+#welcome{
+    grid-area:welcome;
+    color:white;
+}
+
+#subwelcome{
+    grid-area:subwelcome;
+    color:white;
+}
+
+#dropdown{
+    grid-area:dropdown;
+    color:white;
+}
+
+#submit{
+    grid-area:submit;
+    color:white;
+}
