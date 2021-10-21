@@ -4,17 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./client.css" src="/css">
+    <!-- <link rel="stylesheet" href="./client.css"> -->
+    <link rel="stylesheet" href="/css">
     <title>Rock Out</title>
 </head>
 <body>
     <section id="navbar">
-        <button>About Us</button>
-        <button>Calendar</button>
-        <button>Contact</button>
+        <img src="https://i.pinimg.com/736x/5f/f6/e5/5ff6e517d9b08e73adebe3ddba9c40ec.jpg" alt="rock on hands"/>
+        <button id="about">About Us</button>
+        <button id="calendar">Calendar</button>
+        <button id="contact">Contact</button>
     </section>
-    <h1 id="welcome">Welcome to Rock Out</h1>
-    <h2 id="subwelcome">Let's find out what's going on in your area</h2>
+    <h1 id="welcome">Welcome to <br>Rock Out</h1>
+    <div id="infobox">
+        <br>
+        <br>
+    <h2 id="subwelcome">Let's check out what's <br>going on <br> in your area</h2>
+    <br>
     <select name="state" id="dropdown" placeholder="Select Your State">
         <option>Select Your State</option>
         <option value="alabama">Alabama</option>
@@ -68,7 +74,11 @@
         <option value="wisconsin">Wisconsin</option>
         <option value="wyoming">Wyoming</option>
     </select>
-    <button id="submit" type="submit">Submit</button>
-    
+    <br>
+    <p>or</p>
+    <input id="zipcode" type="text" placeholder="Enter Your Zip Code"/>
+    <br><br>
+    <button id="submit" type="submit">Find Events</button>
+</div>
 </body>
 </html>

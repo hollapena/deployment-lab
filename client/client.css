@@ -1,17 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html{
+    background-image: url("https://images.unsplash.com/photo-1514525253161-7a46d19cd819?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+ h1{
+     font-family:roboto;
+     font-size:150px;
+ }
 body{
-    display:grid;
-    height: 100vh;
+    background-color:rgba(61, 61, 61, 0.65);
+    background-size:cover;
+    height:100vh;
     width:100vw;
-    background-color:black;
+    margin-top:-5px;
+    margin-left:-5px;
+    margin:0px, 0px, 0px, 0px;
+    display:grid;
     grid-template-areas: 
-    "header"
-    "welcome"
-    "subwelcome"
-    "dropdown"
-    "submit";
+    "header header"
+    "welcome subwelcome"
+    "welcome dropdown"
+    "welcome submit";
     justify-items:center;
+    align-items:center;
+}
+#navbar{
+    grid-area:header;
+    margin-top:0px;
+    background-color:black;
+    width:100vw;
+    height:70px;
+    display:grid;
+    grid-template-areas: 
+    "image . . . . . . . . . . . . . . . . . . about calendar contact";
+    align-items:center;
+    justify-items:center;
+    margin-top:4px;
+}
+img{
+    grid-area:image;
+    height:150px;
+
+}
+#about{
+    grid-area:about;
+    height:50px;
+    width:100px;
+    background-color:black;
+    color:white;
 }
 
+#calendar{
+    grid-area:calendar;
+    height:50px;
+    width:100px;
+    background-color:black;
+    color:white;
+}
+
+#contact{
+    grid-area:contact;
+    height:50px;
+    width:100px;
+    background-color:black;
+    color:white;
+}
 #welcome{
     grid-area:welcome;
     color:white;
@@ -22,12 +77,35 @@ body{
     color:white;
 }
 
+#infobox{
+    background-color:rgba(232, 232, 232, 0.3);
+    border-radius:20px;
+    height: 390px;
+    width:300px;
+    text-align:center;
+    margin-top: 130px;
+    align-items:center;
+    justify-items:center;
+    margin-right:30px;
+}
+
+p{
+    color:white;
+    font-size:20px;
+}
+
 #dropdown{
     grid-area:dropdown;
-    color:white;
+    width:200px;
+    height:30px;
+}
+
+#zipcode{
+    width: 150px;
+    height:23px;
 }
 
 #submit{
     grid-area:submit;
-    color:white;
+    height:20px;
 }
