@@ -50,7 +50,7 @@ img{
     width:100px;
     background-color:black;
     color:white;
-    border:none;
+    border-bottom:solid;
 }
 
 #calendar{
@@ -59,7 +59,7 @@ img{
     width:100px;
     background-color:black;
     color:white;
-    border:none;
+    border-bottom:solid;
 }
 
 #contact{
@@ -68,7 +68,7 @@ img{
     width:100px;
     background-color:black;
     color:white;
-    border:none;
+    border-bottom:solid;
 }
 #welcome{
     grid-area:welcome;
